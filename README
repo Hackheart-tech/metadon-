@@ -1,0 +1,28 @@
+# 🕵️‍♂️ OSINT – AutoGeoLocate
+
+> Script Python pour extraire automatiquement les **métadonnées EXIF** (notamment la géolocalisation GPS) d’une ou plusieurs photos, et générer un lien direct vers **Google Maps** 🌍
+
+---
+
+## 🎯 Objectif
+
+Ce script permet de :
+
+- Parcourir un dossier contenant des fichiers `.jpg`
+- Extraire les métadonnées EXIF (notamment GPS)
+- Convertir les coordonnées GPS en latitude/longitude exploitables
+- Générer un lien direct vers Google Maps
+- Afficher les photos non géolocalisées
+
+---
+
+## 📁 Exemple d'utilisation
+
+```bash
+$ python3 extract_geo.py
+[+] photos/image1.jpg :
+    📍 Latitude: 48.8566
+    📍 Longitude: 2.3522
+    🌍 Google Maps: https://www.google.com/maps?q=48.8566,2.3522
+
+[-] photos/image2.jpg : pas de géolocalisation trouvée.
